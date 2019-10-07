@@ -6,19 +6,19 @@
 ## REQUIRED ##########################
 
 # The base url of the api to use (e.g. https://apisandbox.openbankproject.com)
-api_hostname=FILL_ME_IN
+api_hostname=http://obp-frontend-demojam.192.168.42.34.nip.io
 
 # For now, this value should be identical to the value of api_hostname
-defaultAuthProvider=FILL_ME_IN
+defaultAuthProvider=http://obp-frontend-demojam.192.168.42.34.nip.io
 
 # These are the oauth keys obtained from the api (at /consumer-registration)
-obp_consumer_key=FILL_ME_IN
-obp_secret_key=FILL_ME_IN
+obp_consumer_key=fjyqzb4d1b0odfoxxvwzoc1gxw5fyytfjzdv2pd3
+obp_secret_key=z4hiqfdma5f0ttc40czxgtptv01i0kpwz5l21v1c
 
 # The base url of THIS application (e.g. http://localhost:8082) which is used for the oauth callback url.
 # Note: if you are running a local api instance and a local API Explorer instance on the same machine,
 # we recommend you run the API on 127.0.0.1 and API Explorer on localhost to avoid weird cookie issues
-base_url=FILL_ME_IN
+base_url=http://localhost:8082
 
 ## End of REQUIRED ###################
 ######################################
@@ -74,7 +74,7 @@ dev.port=8082
 ## OAuth1.0a #########################
 # The hostname to which the request was sent. This is taken from the "Host" HTTP header, or if that
 # does not exist, the DNS name or IP address of the server.
-oauth_1.hostname=FILL_ME_IN
+oauth_1.hostname=http://obp-frontend-demojam.192.168.42.34.nip.io
 ######################################
 
 ## certificate authorization ##
@@ -89,4 +89,4 @@ ssl_keystore_password=test1234
 ssl_key_password=test1234
 
 # a list of version names those are shown in the main page, split with ,
-#main.included.links=OBP_PSD2, OBP_3.1.0, OBP_4.0.0
+main.included.links=OBP_PSD2, OBP_3.1.0, OBP_4.0.0
